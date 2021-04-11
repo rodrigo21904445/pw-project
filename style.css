@@ -4,23 +4,33 @@
 }
 
 body{
-    background-color: #364547;
+    background-color: #151515;
 }
 
-.main-nav{
-    background-color: #3c415c;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 50px;
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.main-nav {
+    background-color: #4e0000;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 2px;
+    display: flex;
     align-items: center;
-    border-top:2px solid #1b2021;
-    border-bottom:2px solid #1b2021;
-    margin:2em;
 }
 
 .main-nav ul{
     list-style-type: none;
-    background-color: #3c415c;
     display: flex;
     /*width: 100%;*/
 }
@@ -38,7 +48,6 @@ body{
 
 .main-nav ul a:hover{
     color: #000;
-    /*background-color: #69c;*/
 }
 
 .main-nav ul > li{
@@ -53,8 +62,8 @@ body{
 .main-nav > ul li:hover > ul{
     display: block;
     position: absolute;
-    top: 125%;
-    bottom: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 150%;
 }
 
 
@@ -65,39 +74,97 @@ body{
     color: #eeebdd;
     font-weight: 800;
     white-space: nowrap;
+    text-align: center;
+}
+
+.dropdown-menu {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu li a{
+    padding: 12px 16px;
+    text-align: left;
+    display: flex;
+    float: none;
+    justify-content: start;
 }
 
 .home{
     display: flex;
     justify-content: flex-start;
-    
-    margin-right :300px;
+    margin-right: 300px;
 }
 
 .genre{
     display: flex;
-    margin-right:300px;
+    margin-right: 300px;
     
 }
 
 .feedback {
     display: flex;
     /*justify-content: flex-end;*/
-    margin-right:90px;
-    
+    margin-right: 850px;
 }
 
 .profile{
     display: flex;
-    justify-content: flex-end;
-    
-    
+    justify-content: flex-end;  
 }
 
 .logout{
     display: flex;
     /*justify-content: flex-end;*/
-    margin-left: 15px;
-    
-    
+    margin-left: 25px;    
+}
+
+.image-container {
+    background-image: url(images/festival-image.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;
+    margin-top: 50px;
+    filter: blur(8px);
+    /*border-top: solid 5px #4e0000;*/
+}
+
+#header-blur-image {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    /*border: 3px solid #4e0000;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-section {
+    background-color: #4e0000;
+}
+
+#main-section-logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+}
+
+.main-section-phrase {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Londrina Solid', cursive;
+    padding: 6px 8px;
+}
+
+.main-section-quote {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Londrina Solid', cursive;
+    padding: 6px 8px;
 }
