@@ -13,11 +13,8 @@ html, body {
 }
 
 footer{
-    display: flex;
-    justify-content: center;
     font-size: 10px;
-    font-weight: bold;
-    margin-top: 100px;
+    font-weight: bold;  
 }
 
 .main-nav {
@@ -27,12 +24,12 @@ footer{
     border-radius: 2px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .main-nav ul{
     list-style-type: none;
     display: flex;
-    /*width: 100%;*/
 }
 
 .main-nav ul li{
@@ -73,7 +70,7 @@ footer{
     text-decoration: none;
     color: #eeebdd;
     font-weight: 800;
-    white-space: nowrap;
+    white-space: nowrap; 
     text-align: center;
 }
 
@@ -92,19 +89,18 @@ footer{
 .home{
     display: flex;
     justify-content: flex-start;
-    margin-right: 300px;
+    margin-right: 250px;
 }
 
 .genre{
     display: flex;
     margin-right: 300px;
-    
+    margin-left: 250px; 
 }
 
 .feedback {
     display: flex;
-    /*justify-content: flex-end;*/
-    margin-right: 850px;
+    margin-right: 500px;
 }
 
 .profile{
@@ -114,8 +110,7 @@ footer{
 
 .logout{
     display: flex;
-    /*justify-content: flex-end;*/
-    margin-left: 25px;    
+    margin-left: 30px;    
 }
 
 .image-container {
@@ -134,7 +129,6 @@ footer{
     font-size: 50px;
     color: white;
     font-weight: bold;
-    /*border: 3px solid #4e0000;*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -147,24 +141,106 @@ footer{
 
 .main-section {
     background-color: #4e0000;
+    display: grid;
+    grid-template-rows: 130px;
 }
 
 #main-section-logo {
     display: flex;
     justify-content: flex-start;
     width: 300px;
+    padding-top: 30px;
 }
 
-.main-section-phrase {
-    display: flex;
-    justify-content: flex-end;
+.main-section div #main-section-phrase{
     font-family: 'Londrina Solid', cursive;
-    padding: 6px 8px;
+    font-size: 30px;
+    padding: 0px 8px 50px 8px;
+    text-align: center;
 }
 
-.main-section-quote {
-    display: flex;
-    justify-content: flex-end;
+.main-section div #main-section-quote{
     font-family: 'Londrina Solid', cursive;
-    padding: 6px 8px;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+#copyright { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#developed-authors {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social-media-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.main-section-search  figure > img{
+    width: 300px;
+    height: 250px; 
+}
+
+.first-row-search {
+    display: flex;
+    justify-content: center;
+}
+
+.second-row-search {
+    display: flex;
+    justify-content: center;
+}
+
+.third-row-search {
+    display: flex;
+    justify-content: center;
+}
+
+#rock-genre {
+    margin-right: 25px;
+}
+
+#metal-genre {
+    margin-right: 25px;
+}
+
+#hiphop-genre {
+    margin-right: 25px;
+}
+
+#rb-genre {
+    margin-right: 25px;
+}
+
+#pop-genre {
+    margin-right: 25px;
+}
+
+#eletronic-genre {
+    margin-right: 25px;
+}
+
+.hits-section {
+    background-color: #4e0000;
+    height: 500px;
+}
+
+.header-hits-section {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
 }
