@@ -17,6 +17,11 @@ footer{
     font-weight: bold;  
 }
 
+label, input {
+    display: block;
+    align-items: center;
+}
+
 .main-nav {
     background-color: #4e0000;
     padding-top: 8px;
@@ -46,7 +51,7 @@ footer{
 .main-nav ul a:hover{
     color: #000;
 }
-
+/*
 .main-nav ul > li{
     display: flex;
     position: relative;
@@ -62,18 +67,15 @@ footer{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     top: 150%;
 }
-
+*/
 
 .main-nav a{
-    display: flex;
-    justify-content: space-between;
     text-decoration: none;
     color: #eeebdd;
     font-weight: 800;
     white-space: nowrap; 
-    text-align: center;
 }
-
+/*
 .dropdown-menu {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -85,13 +87,39 @@ footer{
     float: none;
     justify-content: start;
 }
-
+*/
 .home{
-    display: flex;
-    justify-content: flex-start;
-    margin-right: 250px;
+    margin-right: 150px;
+    font-size: 40px;
+    font-family: 'Londrina Solid', cursive;
 }
 
+.search {
+    margin-right: 750px;
+    margin-top: 15px;
+}
+
+.login {
+    margin-top: 15px;
+}
+
+.register-button {
+    background-color: #45526c;
+    color: #fff;
+    border: none;
+    border-radius: 150px;;
+    padding: 0 30px;
+    padding-top: 5px;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 200px;
+}
+
+
+/*
 .genre{
     display: flex;
     margin-right: 300px;
@@ -112,7 +140,7 @@ footer{
     display: flex;
     margin-left: 30px;    
 }
-
+*/
 .image-container {
     background-image: url(images/festival-image.jpeg);
     background-size: cover;
@@ -232,6 +260,78 @@ footer{
     margin-right: 25px;
 }
 
+.genre-header {
+    visibility: hidden;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    border: 10px solid #fff;
+}
+
+/* hover genres*/
+#rock-genre:hover{
+    width: 320px;
+    height: 270px;
+}
+
+#metal-genre:hover{
+    width: 320px;
+    height: 270px;
+}
+
+#blues-genre:hover{
+    width: 320px;
+    height: 270px;
+}
+
+#hiphop-genre:hover{
+    width: 320px;
+    height: 270px;
+}
+
+#rb-genre:hover{
+    width: 320px;
+    height: 270px;
+}
+
+#jazz-genre:hover{
+    width: 320px;
+    height: 270px;
+}
+
+#pop-genre:hover{
+    width: 320px;
+    height: 270px;
+}
+
+#eletronic-genre:hover{
+    width: 320px;
+    height: 270px;
+}
+
+#latin-genre:hover{
+    width: 320px;
+    height: 270px;
+}
+
+#rock-genre:hover{
+    width: 320px;
+    height: 270px;
+}
+
+#rock-genre:hover .genre-header {
+    visibility: visible;
+}
+
 .hits-section {
     background-color: #4e0000;
     height: 500px;
@@ -243,4 +343,37 @@ footer{
     color: white;
     font-weight: bold;
     text-align: center;
+}
+
+.top-hits-list {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+    display: grid;
+    border: 2px solid #fff;
+    padding: 0;
+    margin: 0; 
+}
+
+.login-section {
+    background-color: #45526c;
+    height: 50em;
+}
+
+.login-form {
+    padding-top: 15em;
+}
+
+.login-fielset {
+    background-color: #bdc7c9;
+    margin-left: 40em;
+    margin-bottom: 20em;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    width: 400px;
+    height: 500px;
+    padding: 6em 8em;
 }
