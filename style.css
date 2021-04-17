@@ -51,23 +51,6 @@ label, input {
 .main-nav ul a:hover{
     color: #000;
 }
-/*
-.main-nav ul > li{
-    display: flex;
-    position: relative;
-}
-
-.main-nav > ul > li ul{
-    display: none;
-}
-
-.main-nav > ul li:hover > ul{
-    display: block;
-    position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top: 150%;
-}
-*/
 
 .main-nav a{
     text-decoration: none;
@@ -75,19 +58,7 @@ label, input {
     font-weight: 800;
     white-space: nowrap; 
 }
-/*
-.dropdown-menu {
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
 
-.dropdown-menu li a{
-    padding: 12px 16px;
-    text-align: left;
-    display: flex;
-    float: none;
-    justify-content: start;
-}
-*/
 .home{
     margin-right: 150px;
     font-size: 40px;
@@ -118,38 +89,47 @@ label, input {
     margin-left: 200px;
 }
 
+@keyframes image-container-animation {
+    0% {
+        opacity:1;
+    }
 
-/*
-.genre{
-    display: flex;
-    margin-right: 300px;
-    margin-left: 250px; 
+    45% {
+        opacity:1;
+    }
+    
+    55% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:0;
+    }
 }
 
-.feedback {
-    display: flex;
-    margin-right: 500px;
-}
-
-.profile{
-    display: flex;
-    justify-content: flex-end;  
-}
-
-.logout{
-    display: flex;
-    margin-left: 30px;    
-}
-*/
 .image-container {
     background-image: url(images/festival-image.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 650px;
-    margin-top: 50px;
+    margin-top: 5px;
     filter: blur(8px);
-    /*border-top: solid 5px #4e0000;*/
+}
+
+.image-container-2 {
+    background-image: url(images/festival-image-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;
+    margin-top: 5px;
+    filter: blur(8px);
+    animation-name: image-container-animation;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-direction: alternate;
 }
 
 #header-blur-image {
@@ -165,6 +145,12 @@ label, input {
     width: 60%;
     padding: 20px;
     text-align: center;
+    text-decoration: none;
+
+}
+
+#header-blur-image:hover {
+    color: #4e0000;
 }
 
 .main-section {
@@ -468,4 +454,47 @@ input[type="submit"]:hover {
 
 .signup a:hover {
     text-decoration: underline;
+}
+
+.register-section {
+    background-color: #45526c;
+    height: 50em;
+}
+
+.register-form {
+    padding-top: 10em;
+}
+
+.register-fieldset {
+    background-color: #bdc7c9;
+    margin-left: 40em;
+    margin-bottom: 20em;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    width: 400px;
+    height: 550px;
+    padding: 3em 8em;
+}
+
+.register-fieldset .user-pass {
+    position: relative;
+    border-bottom: 2px solid #4e0000;
+    margin: 30px 0;
+}
+
+
+input[type="checkbox"] {
+    margin: 20px 10px 30px 0;
+}
+
+#terms-condition {
+    color: #151515;
+    font-size: 15px;
+    bottom: 323px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.checkbox-terms-condition {
+    display: inline-block;
 }
