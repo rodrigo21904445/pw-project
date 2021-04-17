@@ -128,7 +128,7 @@ label, input {
     animation-name: image-container-animation;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 8s;
+    animation-duration: 4s;
     animation-direction: alternate;
 }
 
@@ -142,8 +142,7 @@ label, input {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 60%;
-    padding: 20px;
+    width: 10%;
     text-align: center;
     text-decoration: none;
 
@@ -151,6 +150,8 @@ label, input {
 
 #header-blur-image:hover {
     color: #4e0000;
+    background: rgba(69, 82, 108, 1);
+    border-radius: 25px;
 }
 
 .main-section {
@@ -247,80 +248,89 @@ label, input {
 }
 
 .genre-header {
-    visibility: hidden;
-    font-family: 'Londrina Solid', cursive;
-    font-size: 50px;
+    position: relative;      
+    width: 50%;
+    transition: .5s ease;
+    opacity:0;
     color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 60%;
-    padding: 20px;
+    font-size: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    top: -130px;
+    margin-left: 75px;
     text-align: center;
-    border: 10px solid #fff;
+    background: rgba(69, 82, 108, 1);
+    border-radius: 25px;
+}
+
+.genre-header a {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 30px;
+    color: #4e0000;
+    text-decoration: none;
+}
+
+.first-row:hover .genre-header {
+    opacity: 1;
+}
+
+.second-row:hover .genre-header {
+    opacity: 1;
+}
+
+.third-row:hover .genre-header {
+    opacity: 1;
 }
 
 /* hover genres*/
-#rock-genre:hover{
+.first-row:hover #rock-genre{
     width: 320px;
     height: 270px;
 }
 
-#metal-genre:hover{
+.first-row:hover #metal-genre{
     width: 320px;
     height: 270px;
 }
 
-#blues-genre:hover{
+.first-row:hover #blues-genre{
     width: 320px;
     height: 270px;
 }
 
-#hiphop-genre:hover{
+.second-row:hover #hiphop-genre{
     width: 320px;
     height: 270px;
 }
 
-#rb-genre:hover{
+.second-row:hover #rb-genre{
     width: 320px;
     height: 270px;
 }
 
-#jazz-genre:hover{
+.second-row:hover #jazz-genre{
     width: 320px;
     height: 270px;
 }
 
-#pop-genre:hover{
+.third-row:hover #pop-genre{
     width: 320px;
     height: 270px;
 }
 
-#eletronic-genre:hover{
+.third-row:hover #eletronic-genre{
     width: 320px;
     height: 270px;
 }
 
-#latin-genre:hover{
+.third-row:hover #latin-genre{
     width: 320px;
     height: 270px;
-}
-
-#rock-genre:hover{
-    width: 320px;
-    height: 270px;
-}
-
-#rock-genre:hover .genre-header {
-    visibility: visible;
 }
 
 .hits-section {
     background-color: #4e0000;
-    height: 500px;
+    height: 550px;
 }
 
 .header-hits-section {
@@ -332,16 +342,30 @@ label, input {
 }
 
 .top-hits-list {
+    list-style-type: none;    
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25em;
+    background-color: #45526c;
+    border-radius: 25px;
+    box-shadow:  0px 0px 5px 5px #eeebdd;
+}
+
+.top-hits-list li {
     font-family: 'Londrina Solid', cursive;
-    font-size: 15px;
+    font-size: 25px;
     color: white;
-    font-weight: bold;
-    text-align: center;
-    list-style-type: none;
-    display: grid;
-    border: 2px solid #fff;
-    padding: 0;
-    margin: 0; 
+    text-align: start;
+    
+}
+
+.top-hits-list li span{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 35px;
+    color: white;
+    margin-right: 200px;
 }
 
 .login-section {
@@ -494,6 +518,9 @@ input[type="checkbox"] {
     position: absolute;
     margin-left: 20px;
 }
+
+
+
 
 .checkbox-terms-condition {
     display: inline-block;
