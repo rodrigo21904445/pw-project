@@ -22,6 +22,30 @@ label, input {
     align-items: center;
 }
 
+@media (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        width: 100%;
+    }
+}
+
 .main-nav {
     background-color: #4e0000;
     padding-top: 8px;
@@ -589,12 +613,6 @@ input[type="checkbox"] {
     height: 50em;
 }
 
-.iframe-video {
-    display: flex;
-    justify-content: center;
-    margin-left: 600px;
-}
-
 .html-table {
     width: 50%;
 }
@@ -635,4 +653,8 @@ tr:nth-child(odd){
 
 #details-wordcloud {
     margin-left: 700px;
+}
+
+#iframe-video {
+    margin-left: 600px;
 }
