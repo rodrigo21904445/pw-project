@@ -1,0 +1,15 @@
+/* base.css */
+
+body > article {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+ }
+ 

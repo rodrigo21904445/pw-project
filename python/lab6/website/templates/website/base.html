@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pt">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'website/static/website/css/base.css' %}">
+    </head>
+    <!-- base.html -->
+    <body>
+        <header class="jumbotron text-center">
+            <h1>Website</h1>
+            <p>Teste 1 2 3</p>
+            <nav>
+                <a href="{% url 'website:home' %}" class="btn btn-info">Home</a>
+                <a href="{% url 'website:page1' %}" class="btn btn-info">Page1</a>
+                <a href="{% url 'website:page2' %}" class="btn btn-info">Page2</a>
+            </nav>
+        </header>
+        <article class="container">
+            <main class="col-sm-6">
+                {% block main %}
+                {% endblock main %}
+            </main>
+            <aside class="col-sm-6">
+                {% load static %}
+                <img src="{% static 'website/static/images/mustang-shelby.jpg' %}">
+            </aside>
+        </article>
+        <footer>
+            <p>Developed by some chad</p>
+        </footer>
+    </body>
+</html>
